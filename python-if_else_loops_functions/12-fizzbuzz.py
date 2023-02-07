@@ -1,16 +1,7 @@
 #!/usr/bin/python3
-for num in {1..100}
-do
-  if (( num % 3 == 0 && num % 5 == 0 ))
-  then
-    echo "FizzBuzz"
-  elif (( num % 3 == 0 ))
-  then
-    echo "Fizz"
-  elif (( num % 5 == 0 ))
-  then
-    echo "Buzz"
-  else
-    echo "$num"
-  fi
-done
+# Author - mondli
+"""Print the numbers from 1 to 100 separated by a space.
+  For multiples of three, print Fizz instead of the number
+  For multiples of five, print Buzz instead of the number.
+  For multiples of three and five, print FizzBuzz instead of the number.
+  """
