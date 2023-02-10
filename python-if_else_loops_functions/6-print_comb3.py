@@ -1,12 +1,7 @@
 #!/usr/bin/python3
-for x in range(0,10):
-    for z in range(1, 10):
-        if x >= z:
-            continue
-        elif x == 8 and z == 9:
-            print("{}{}")
-        else:
-            print("{}{}".format(x,z), end=", ")
-
-
-
+for i in range(9):
+    for j in range(i + 1, 10):
+        if i * 10 + j < 89:
+            print("{:d}{:d}".format(i, j), end=", ")
+print("{:d}".format(89))    
+    
