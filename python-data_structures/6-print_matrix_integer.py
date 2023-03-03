@@ -2,9 +2,5 @@
 def print_matrix_integer(matrix=[[]]):
     for now in matrix:
         for noy in now:
-            if noy != now[-1]:
-
-                print("{:d}".format(noy), end=" ")
-            else:
-                print("")
+            print("{:d}".format(noy), end=" " if noy != now[-1] else "")
         print()
