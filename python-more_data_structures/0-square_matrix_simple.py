@@ -2,4 +2,5 @@
 def square_matrix_simple(matrix=[]):
     if not matrix:
         print()
-    return[[matri * matri for matri in member] for member in matrix]    
+    return [[matrices * matrices for matrices in now] for now in matrix]
+    
