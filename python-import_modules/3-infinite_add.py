@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-if __name__="__main__":
-    from sys import argv
-    x=len(argv)
+if __name__=="__main__":
+    import sys
     num=0
+    x=len(sys.argv)
     for i in (1,x):
-        num += int(argv[i])
+        num += int(sys.argv[i])
     print("{:d}".format(num))
 
