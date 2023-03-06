@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from sys import argv
-    num_args = len(argv)
-    total = 0
-    for i in range(1, num_args):
-        total += int(argv[i])
-    print("{:d}".format(total))
+if __name__="__main__":
+    import sys
+    num=0
+    x=len(sys.argv)
+    for i in (1,x):
+        num += int(sys.argv[i])
+    print("{:d}".format(num))    
