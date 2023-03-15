@@ -3,15 +3,15 @@
 
 class Square:
     """representation od square class"""
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
+        """initialization of attribute"""
         self.size=size
         self.position=position
-    def __str__(self):
-        self.my_print()
+    
     @property
     def size(self):
         """getting value of size"""
-        self.__size=size
+        return self.__size
 
     @size.setter    
     def size(self,value):
