@@ -7,7 +7,7 @@ class Square:
     def __init__(self, size=0):
         """initialization of instance attribute"""
 
-        self.__size = size
+        self._size = size
         if not isinstance(size, int):
             return TypeError('size must be an integer')
         if size < 0:
@@ -18,11 +18,11 @@ class Square:
     @property
     def size(self):
         """getting value of size """
-        return self.__size
+        return self._size
     @size.setter
     def size(self, value):
         """setting value of size"""
-        self.__size = value
+        self._size = value
         if not isinstance(size, int):
             return TypeError('size must be an integer')
         if size < 0:
@@ -32,5 +32,5 @@ class Square:
 
     def area(self):
         """calculating square area"""
-        return (self.__size ** 2)
+        return (self._size ** 2)
 
