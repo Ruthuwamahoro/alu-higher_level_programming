@@ -2,8 +2,9 @@
 
 """module of define square"""
 
+
 class Square:
-    """difining square class"""
+    """defining square class"""
 
     def __init__(self, size=0):
         """Initializing instance attribute"""
@@ -13,7 +14,7 @@ class Square:
     @property
     def size(self):
         """Getting value of size"""
-        return (self.__size)
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -25,4 +26,4 @@ class Square:
 
     def area(self):
         """calculating current area of the square."""
-        return (self.__size * self.__size)
+        return self.__size * self.__size
