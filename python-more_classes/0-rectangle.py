@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""we don't need to import any module"""
+"""we don't need to import any module just only define rectangle"""
 
 class Rectangle:
-    """rectangle is 2D shape with 4 sides, 4 corners, and 4 right angles"""    pass
+    """Representation of rectangle"""
+    pass
