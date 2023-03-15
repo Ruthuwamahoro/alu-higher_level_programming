@@ -4,8 +4,10 @@
 class Square:
     """representation od square class"""
     def __init__(self, size=0, position=(0,0)):
-        self.__size=size
-        self.__position=position
+        self.size=size
+        self.position=position
+    def __str__(self):
+        self.my_print()
     @property
     def size(self):
         """getting value of size"""
@@ -17,7 +19,7 @@ class Square:
         self.__size=value
         if not isinstance(size, int):
             return TypeError('size must be an integer')
-        if size < 0:
+        if value < 0:
             return ValueError('size must be >= 0')
     @property
     def position(self):
@@ -37,7 +39,7 @@ class Square:
     def my_print(self):
         """print # character"""
         if self.__size == 0:
-            print()
+            print("")
             return 
         [print("") for num in range(0, self.__position[1])]
         for num in range(0, self.__size):
