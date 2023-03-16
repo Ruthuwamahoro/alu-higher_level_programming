@@ -7,7 +7,7 @@ class Rectangle:
     """Representation of  rectangle as aclass"""
 
     def __init__(self, width=0, height=0):
-        """Initialization of new instance attrubute""" 
+        """Initialization of new instance attrubute"""
         self.width = width
         self.height = height
 
