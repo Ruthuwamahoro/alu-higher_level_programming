@@ -3,7 +3,6 @@
 """we don't need to import any module just defines a Rectangle class."""
 
 
-
 class Rectangle:
     """Representation of  a rectangle as a class."""
 
@@ -11,7 +10,6 @@ class Rectangle:
         """Initialization of new attribute"""
         self.width = width
         self.height = height
-
 
     @property
     def width(self):
@@ -50,4 +48,4 @@ class Rectangle:
         """Return and calculate perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
-        return ((self.__width * 2) + (self.__height * 2))    
+        return ((self.__width * 2) + (self.__height * 2))
