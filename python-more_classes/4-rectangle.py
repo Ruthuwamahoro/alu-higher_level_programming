@@ -10,6 +10,8 @@ class Rectangle:
         """initialization of instance attribute"""
         self.width = width
         self.height = height
+
+
     def __str__(self):
         total = ""
         if self.__height == 0 or self.width == 0:
@@ -19,7 +21,9 @@ class Rectangle:
             if i is not self.__height - 1:
                 total += "\n"
         return total
-
+    def __repr__(self):
+        """return the string presentation"""
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
     @property
     def width(self):
         """retrieving value"""
@@ -57,4 +61,5 @@ class Rectangle:
         """calculating perimeter of rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        return (self.__width + self.__height) * 2 
+        return (self.__width + self.__height) * 2
+
