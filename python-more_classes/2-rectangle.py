@@ -5,8 +5,6 @@
 
 
 class Rectangle:
-
-
     """Representation of  a rectangle as a class."""
 
     def __init__(self, width=0, height=0):
