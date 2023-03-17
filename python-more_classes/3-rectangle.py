@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""we do not need to import any module just defines a Rectangle class in this current module."""
+"""we do not need to import any module just defines a Rectangle as class."""
 
 
 class Rectangle:
