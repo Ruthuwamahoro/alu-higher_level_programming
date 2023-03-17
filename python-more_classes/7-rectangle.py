@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""we don't need to import module only defines a Rectangle class."""
+"""we don't have to import any module just defines a Rectangle class."""
 
 
 class Rectangle:
-    """creating class rectangle"""
+    """creating a rectangle class"""
 
     number_of_instances = 0
     print_symbol = "#"
@@ -30,7 +30,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Getting the value the height of the Rectangle."""
+        """Getting the value of  the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -46,19 +46,19 @@ class Rectangle:
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """calculating and returning the perimeter of the Rectangle."""
+        """calculating and Returning the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """print rectangle with character #"""
+        """Return the printable representation of string"""
         if self.__width == 0 or self.__height == 0:
             return ("")
 
         rect = []
         for i in range(self.__height):
-            [rect.append('#') for j in range(self.__width)]
+            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
