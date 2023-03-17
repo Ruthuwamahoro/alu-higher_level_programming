@@ -1,25 +1,18 @@
 #!/usr/bin/python3
-# 5-rectangle.py
-# Brennan D Baraban <375@holbertonschool.com>
-"""Defines a Rectangle class."""
+"""we don't need to import any module just defines a Rectangle class."""
 
 
 class Rectangle:
-    """Represent a rectangle."""
+    """Creating a class called Rectangle"""
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle.
-
-        Args:
-            width (int): The width of the new rectangle.
-            height (int): The height of the new rectangle.
-        """
+        """Initialization of new rinstances"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Get/set the width of the Rectangle."""
+        """Getting value of width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -32,7 +25,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get/set the height of the Rectangle."""
+        """Getting value of  height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -44,20 +37,17 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Return the area of the Rectangle."""
+        """calculating and Returning the area of the Rectangle."""
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """Return the perimeter of the Rectangle."""
+        """calculating and Returning the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Return the printable representation of the Rectangle.
-
-        Represents the rectangle with the # character.
-        """
+        """print a rectangle with character #."""
         if self.__width == 0 or self.__height == 0:
             return ("")
 
@@ -75,5 +65,5 @@ class Rectangle:
         return (rect)
 
     def __del__(self):
-        """Print a message for every deletion of a Rectangle."""
+        """Print a message """
         print("Bye rectangle...")
