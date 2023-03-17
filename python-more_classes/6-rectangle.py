@@ -1,20 +1,22 @@
 #!/usr/bin/python3
-"""we do't need to import any module just defines a Rectangle class."""
+"""we don't need to import module only defines a Rectangle class."""
+
 
 class Rectangle:
-    """creating a class called rectangle"""
+    """creating class rectangle"""
 
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initialization of new instances"""
+
         type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Getting value of width of the Rectangle."""
+        """Getting the value the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -27,7 +29,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Getting value of the height of the Rectangle."""
+        """Getting the value the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -41,11 +43,11 @@ class Rectangle:
     def area(self):
         """calculating and returning the area of the Rectangle."""
         return (self.__width * self.__height)
-.
+
     def perimeter(self):
         """calculating and returning the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
-            return 0
+            return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
