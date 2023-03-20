@@ -4,4 +4,4 @@
 
 def lookup(obj):
     """return list of available attribute"""
-    return list =dir(obj)
+    return dir(obj)
