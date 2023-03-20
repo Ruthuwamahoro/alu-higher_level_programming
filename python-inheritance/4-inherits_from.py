@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-"""function that return True if an object
-is an instance of class that inherited"""
+"""Defining function that check object instance inheritance."""
 
 
-def is_kind_of_class(obj, a_class):
-    """through implementationed"""
+def inherits_from(obj, a_class):
+    """Through implementation
+    checks whether object is an instance
+    of class that inherited return True
+    otherwise False"""
     if issubclass(type(obj), a_class) and type(obj) != a_class:
         return True
     return False
+
