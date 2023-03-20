@@ -6,4 +6,5 @@ def lookup(obj):
     """return list of available attribute"""
     list = []
     for n in dir(obj):
-        return list.append(n)
+        list = list.append(n)
+        return list
