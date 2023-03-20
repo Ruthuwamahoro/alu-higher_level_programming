@@ -13,7 +13,7 @@ def is_kind_of_class(obj, a_class):
     Returns:
         True if obj is an instanceof class
         inherited directly or directly
-        """
+    """
     if issubclass(type(obj), a_class) and type(obj) != a_class:
         return True
     return False
