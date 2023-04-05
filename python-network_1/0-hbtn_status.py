@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """fetching https://alu-intranet.hbtn.io/status"""
+import urllib.request
 
 if __name__ == "__main__":
     y = urllib.request.Request("https://intranet.hbtn.io/status")
