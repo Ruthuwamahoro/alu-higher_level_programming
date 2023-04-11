@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # 102-square.py
-
 """Define a class Square."""
 
 
