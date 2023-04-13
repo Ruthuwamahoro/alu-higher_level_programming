@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """defining a function that prints a square with character"""
+
+
 def print_square(size):
     """Print a square with the character.
     Args:
@@ -13,6 +15,6 @@ def print_square(size):
     if size < 0:
         raise ValueError("size must be >= 0")
 
-    for i in range(size):
-        [print("#", end="") for i in range(size)]
+    for n in range(size):
+        [print("#", end="") for n in range(size)]
         print("")
