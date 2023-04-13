@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """function that prints"""
+
+
 def say_my_name(first_name, last_name=""):
     """print name
     args:
@@ -8,7 +10,7 @@ def say_my_name(first_name, last_name=""):
     Returns:
         TypeError if first_name is not a  string
         TypeError if last_name is not a string
-    """        
+    """
 
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
