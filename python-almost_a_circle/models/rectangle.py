@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-"""Defining a class"""
+"""Class Rectangle that inherit from Base"""
 
 from models.base import Base
 
+
 class Rectangle(Base):
-    """representation of Rectangle clasa that inherits from base class"""
-    def__init__(self, width, height, x=0, y=0, id=None):
-        """initialization of attribute"""
+    """Representation of rectangular that inherts from base class"""
+
+    def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         self.x = x
         self.y = y
+
     @property
     def return_width(self):
         """method that return the value of width"""
@@ -19,7 +21,7 @@ class Rectangle(Base):
     @width.setter
     def set_value_width(self, value):
         """method that set value to value"""
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
@@ -33,7 +35,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """setting the value to the height"""
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
