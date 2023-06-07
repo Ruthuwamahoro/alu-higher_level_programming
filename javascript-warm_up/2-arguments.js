@@ -1,10 +1,12 @@
 #!/usr/bin/node
-function checkingArgument (argument) {
-  if (argument) {
+function checkingArgument () {
+  if (process.argv.length <= 2) {
+    console.log('No argument');
+  } else if (process.argv.length === 3) {
     console.log('Argument found');
   } else {
-    console.log('No argument');
+    console.log('Arguments found');
   }
 }
-const passingParameter = process.argv[2];
-checkingArgument(passingParameter);
+
+checkingArgument();
