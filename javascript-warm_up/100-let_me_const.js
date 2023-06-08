@@ -1,4 +1,5 @@
 #!/usr/bin/node
-let value = 40;
-console.log(value);
-value = 333;
+function updateMyVar() {
+  myVar = 333;
+}
+updateMyVar();
