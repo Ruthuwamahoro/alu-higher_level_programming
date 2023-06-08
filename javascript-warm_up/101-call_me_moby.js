@@ -1,9 +1,11 @@
 #!/usr/bin/node
-function executeXTimes (x, theFunction) {
+
+function executeXTimes(x, theFunction) {
   for (let i = 0; i < x; i++) {
     theFunction();
   }
 }
+
 function myFunction() {
   console.log("Executing the function");
 }
