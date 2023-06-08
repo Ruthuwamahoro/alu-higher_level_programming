@@ -2,4 +2,4 @@
 function valueUpdate() {
 	console.log(333);
 }
-updateMyVar();
+valueUpdate();
