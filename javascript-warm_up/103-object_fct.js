@@ -1,11 +1,12 @@
 #!/usr/bin/node
-const myObject = {
+#!/usr/bin/node
+
+let myObject = {
   type: 'object',
   value: 12,
-};
-
-myObject.incr = function () {
-  this.value++;
+  incr() {
+    this.value++;
+  }
 };
 
 console.log(myObject);
