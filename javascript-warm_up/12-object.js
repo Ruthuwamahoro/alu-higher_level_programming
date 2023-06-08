@@ -1,5 +1,7 @@
 #!/usr/bin/node
 let value = 12;
-console.log(`${value}`);
+let valueType = typeof (value);
+console.log(`type: ${valueType} , value: ${value}`);
 value = 89;
-console.log(`${value}`);
+valueType = typeof (value);
+console.log(`type: ${valueType} , value: ${value}`);
