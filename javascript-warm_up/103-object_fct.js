@@ -1,17 +1,17 @@
 #!/usr/bin/node
-let myNumber = 5;
-
-const incr = () => {
-  myNumber++;
+const myObject = {
+  type: 'object',
+  value: 12,
 };
 
-const incrementAndCall = (number, theFunction) => {
-  theFunction(number);
+myObject.incr = function () {
+  this.value++;
 };
 
-const myFunction = (number) => {
-  console.log('Number:', number);
-};
-
-incr();
-incrementAndCall(myNumber, myFunction);
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
