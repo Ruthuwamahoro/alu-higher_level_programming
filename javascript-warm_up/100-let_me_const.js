@@ -1,5 +1,5 @@
 #!/usr/bin/node
 function valueUpdate() {
-	console.log(333);
+	const value = 333;
 }
 valueUpdate();
