@@ -1,7 +1,9 @@
-#!/usr/bin/node
-let value = 12;
-let valueType = typeof (value);
-console.log(`type: ${valueType} , value: ${value}`);
-value = 89;
-valueType = typeof (value);
-console.log(`type: ${valueType} , value: ${value}`);
+const myObject = {
+  type: 'object',
+  value: 12
+};
+console.log(myObject);
+
+myObject.value = 89;
+
+console.log(myObject);
