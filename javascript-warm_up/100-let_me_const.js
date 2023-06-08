@@ -1,5 +1,7 @@
 #!/usr/bin/node
-function valueUpdate() {
-	value = 333;
+
+
+function updateMyVar() {
+  myVar = 333;
 }
-valueUpdate();
+updateMyVar();
