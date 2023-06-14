@@ -1,12 +1,14 @@
 #!/usr/bin/node
 const fs = require('fs');
 const filePath = process.argv[2];
-if (!filePath) {
-  console.error("no such file or directory");
-}
-fs.readFile(filePath, 'utf8', (err, data) => {
+fs.readFile(filePath, 'utf8', (err, content) => {
   if (err) {
-    console.err(err);
+    if (err.code === 'ENOENT') {
+      console.error(`${filePath} doesn't exist`);
+    } else {
+      console.error(err);
+    }
   }
-  console.log(data);
+
+  console.log(`File content:\n${data}`);
 });
